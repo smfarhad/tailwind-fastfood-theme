@@ -27,23 +27,25 @@
               Bur<span class="text-secondaryColor">ger</span>
             </a>
         </div>
-        <div id="nav-menu" class="hidden absolute top-0 left-0 w-full bg-primaryColor border-b border-secondaryColor p-3">
-          <ul class="flex flex-col text-center gap-5">
-            <li> <a class="hover:text-secondaryColor ease-in duration-200" href="#home">Home</a> </li>
-            <li><a class="hover:text-secondaryColor ease-in duration-200" href="#about">About</a></li>
-            <li><a class="hover:text-secondaryColor ease-in duration-200" href="#menu">Menu</a></li>
-            <li><a class="hover:text-secondaryColor ease-in duration-200" href="#review">Review</a></li>
-            <li><a class="hover:text-secondaryColor ease-in duration-200" href="#contact">Contact</a></li>
+        <div id="nav-menu" class="hidden absolute top-0 left-0
+         w-full py-14 bg-primaryColor border-b border-secondaryColor 
+         md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto">
+          <ul class="flex flex-col text-center gap-5 md:flex-row">
+            <li> <a class="nav__link hover:text-secondaryColor ease-in duration-200" href="#home">Home</a> </li>
+            <li><a class="nav__link hover:text-secondaryColor ease-in duration-200" href="#about">About</a></li>
+            <li><a class="nav__link hover:text-secondaryColor ease-in duration-200" href="#menu">Menu</a></li>
+            <li><a class="nav__link hover:text-secondaryColor ease-in duration-200" href="#review">Review</a></li>
+            <li><a class="nav__link hover:text-secondaryColor ease-in duration-200" href="#contact">Contact</a></li>
           </ul>
           <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer
-           hover:text-red-800" id="nav-close">
+           hover:text-red-800 md:hidden" id="nav-close">
             <i class="ri-close-line"></i>
           </div>
         </div>
 
         <div class="flex items-center gap-5">
           <i class="ri-moon-line"></i>
-          <div id="hamburger">
+          <div class="md:hidden" id="hamburger">
             <i class="ri-menu-2-line cursor-pointer ml-4 text-xl"></i>
           </div>
         </div>
@@ -51,6 +53,36 @@
      </header>
     <main>
     <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+    <section id="home">
+      <div class="container flex flex-col items-center gap-10">
+        <div>
+          <img src="./img/home-image.png" alt="Home Image">
+        </div>
+        <div>
+          <h1>HAPPY TUMMY WITH TASTY BURGERS.</h1>
+          <div></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo euismod enim, et sodales est lobortis sit amet. Vivamus et rhoncus eros, luctus accumsan lacus. </p>
+          <div>
+            <div>
+              <i class="fa-solid fa-utensils"></i>
+              <br/> 
+              Delicious
+            </div>
+            <div>
+              <i class="fa-solid fa-droplet"></i>
+              <br/> 
+              Fresh
+            </div>
+            <div>
+              <i class="fa-solid fa-envira"></i>
+              <br/> 
+              Organic
+            </div>
+          </div>
+          <a href="">learn more</a>
+        </div>
+      </div>
+    </section>
 
     <!--~~~~~~~~~~~~~~~ Category ~~~~~~~~~~~~~~~-->
 
